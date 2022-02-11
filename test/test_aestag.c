@@ -631,7 +631,7 @@ int test_aes128_gcm_tls(ENGINE *e, void *data)
                             EVP_GCM_TLS_FIXED_IV_LEN, 0);
 }
 
-/* 
+/*
  * OpenSSL doesn't recommend using EVP_Cipher(), but there are applications
  * using it, so we need to support it. With wolfCrypt, AES-GCM decryption cannot
  * be decoupled from checking the authentication tag, so we only expect the

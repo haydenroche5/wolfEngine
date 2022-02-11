@@ -1273,7 +1273,7 @@ static int wolfengine_ctrl(ENGINE* e, int cmd, long i, void* p,
         case WOLFENGINE_CMD_SET_LOGGING_CB_WOLFSSL:
             /* if f is NULL, resets logging back to default */
             if (wolfSSL_SetLoggingCb((wolfSSL_Logging_cb)f) != 0) {
-                WOLFENGINE_ERROR_MSG(WE_LOG_ENGINE, 
+                WOLFENGINE_ERROR_MSG(WE_LOG_ENGINE,
                         "Error registering wolfSSL logging callback");
                 ret = 0;
             }
